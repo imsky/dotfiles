@@ -1,0 +1,46 @@
+tap "homebrew/core"
+tap "homebrew/cask"
+
+# NTFS support
+cask "osxfuse"
+brew "ntfs-3g"
+
+# Languages
+brew "go"
+
+# System tools
+brew "bash-completion"
+brew "fzf"
+brew "htop"
+brew "nano"
+brew "ncdu"
+brew "ripgrep"
+brew "tmux"
+brew "tree"
+brew "w3m"
+brew "watch"
+brew "wget"
+
+# Media tools
+brew "ffmpeg"
+brew "pdfgrep"
+brew "youtube-dl"
+
+# Dev tools
+brew "git"
+brew "git-extras"
+brew "git-fresh"
+brew "hyperfine"
+brew "jq"
+brew "postgresql"
+brew "tig"
+
+# Ops tools
+brew "awscli"
+brew "docker-clean"
+brew "kubectx"
+brew "kubernetes-helm"
+brew "helmfile"
+brew "packer"
+brew "sops"
+brew "terraform-docs"
