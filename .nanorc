@@ -1,0 +1,13 @@
+include "/usr/local/share/nano/*.nanorc"
+include "/usr/local/opt/nano/share/nano/*.nanorc"
+set tabstospaces
+set tabsize 2
+set whitespace "  "
+set smarthome
+unset backup
+
+# 2.7+ options
+set linenumbers
+
+# 2.8+ options
+set constantshow

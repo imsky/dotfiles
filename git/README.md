@@ -57,7 +57,7 @@ git checkout -b right-parent
 git cherry-pick old-parent..target-branch
 ```
 
-# Add executable bit to file
+## Add executable bit to file
 
 ```sh
 git update-index --chmod=+x file

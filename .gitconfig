@@ -1,0 +1,32 @@
+[alias]
+	who = shortlog -sn
+	lg = log --pretty=oneline --all --topo-order
+	po = push origin
+	aa = commit -a --amend --allow-empty --no-edit
+	fix = commit --all --status --fixup HEAD
+
+[color]
+	ui = true
+
+[core]
+	trustctime = false
+	precomposeunicode = false
+	autocrlf = input
+	editor = nano
+  filemode = false
+
+[help]
+	autocorrect = 1
+
+[log]
+	decorate = true
+	abbrevCommit = true
+
+[push]
+	default = upstream
+
+[rebase]
+	autosquash = true
+
+[apply]
+	whitespace = fix

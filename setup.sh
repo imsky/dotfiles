@@ -5,7 +5,7 @@ set -o pipefail
 set -o nounset
 set -o xtrace
 
-if $(uname) = "Darwin"; then
+if [[ $(uname) = "Darwin" ]]; then
   # Check for XCode Command Line Tools
   gcc --version > /dev/null
 
@@ -22,6 +22,7 @@ if $(uname) = "Darwin"; then
     echo 'export PATH="/usr/local/bin:/usr/local/opt/gnu-getopt/bin:$PATH"' >> ~/.bash_profile
     /usr/local/opt/fzf/install
     defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+    cp -i .gitconfig .nanorc ~/
     echo '# setup complete' >> ~/.bash_profile
   fi
 fi
