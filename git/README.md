@@ -75,6 +75,13 @@ git cherry-pick old-parent..target-branch
 git update-index --chmod=+x file
 ```
 
+## Update tracking branch
+
+```sh
+git branch --unset-upstream
+git push -u origin branch
+```
+
 ## Convert cvs to git
 
 ```sh
