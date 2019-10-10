@@ -1,5 +1,17 @@
 # Git
 
+## Rewrite commit messages on a branch
+
+```sh
+git filter-branch -f --msg-filter 'sed "s/foo/bar/"' master..HEAD
+```
+
+## Move files in all commits on a branch
+
+```sh
+git filter-branch -f --prune-empty --tree-filter 'mv foo bar' master..HEAD
+```
+
 ## Delete local and remote tag
 
 ```sh
@@ -61,6 +73,13 @@ git cherry-pick old-parent..target-branch
 
 ```sh
 git update-index --chmod=+x file
+```
+
+## Update tracking branch
+
+```sh
+git branch --unset-upstream
+git push -u origin branch
 ```
 
 ## Convert cvs to git
