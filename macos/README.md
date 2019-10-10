@@ -37,3 +37,13 @@ hdiutil convert -format UDTO -o image file.iso
 diskutil list; disk util unmountDisk /dev/diskX
 sudo dd if=image.cdr of=/dev/rdiskX bs=1m
 ```
+
+## Create a PDF out of images
+
+* Select multiple images, open with Preview
+* Choose File->Print and print to PDF
+
+## Password-protect a PDF
+
+* Open a PDF with Preview
+* Choose File->Export and toggle "Encrypt"
