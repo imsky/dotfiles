@@ -27,6 +27,7 @@ if [[ $(uname) = "Darwin" ]]; then
     echo 'export HISTIGNORE=ls:bg:fg:history' >> ~/.bash_profile
     echo 'export HISTTIMEFORMAT="%F %T "' >> ~/.bash_profile
     echo 'export PROMPT_COMMAND="history -a"' >> ~/.bash_profile
+    echo 'export AWS_SDK_LOAD_CONFIG=1' >> ~/.bash_profile
     /usr/local/opt/fzf/install
     defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
     cp -i .gitconfig .nanorc ~/

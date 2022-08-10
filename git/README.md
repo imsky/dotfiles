@@ -1,5 +1,15 @@
 # Git
 
+## General
+
+```sh
+# force push without overriding newer changes
+git push --force-with-lease
+
+# quick review of everyday Git commands
+git help everyday
+```
+
 ## Rewrite commit messages on a branch
 
 ```sh
@@ -92,4 +102,10 @@ cd repo.git
 cat ../d.dat ../b.dat | git fast-import
 git gc --prune=now
 git checkout master
+```
+
+## Get contributor list
+
+```sh
+git shortlog -n -s -- .
 ```
