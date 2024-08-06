@@ -109,3 +109,9 @@ git checkout master
 ```sh
 git shortlog -n -s -- .
 ```
+
+## Undo
+
+```sh
+git reset --soft HEAD^
+```

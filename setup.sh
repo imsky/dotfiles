@@ -29,8 +29,9 @@ if [[ $(uname) = "Darwin" ]]; then
     echo 'export PROMPT_COMMAND="history -a"' >> ~/.bash_profile
     echo 'export AWS_SDK_LOAD_CONFIG=1' >> ~/.bash_profile
     /usr/local/opt/fzf/install
+
     defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
     cp -i .gitconfig .nanorc ~/
-    echo '# setup complete' >> ~/.bash_profile
+    echo '# setup complete\n\nRemember to customize .gitconfig' >> ~/.bash_profile
   fi
 fi

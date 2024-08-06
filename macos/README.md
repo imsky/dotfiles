@@ -1,15 +1,9 @@
 # macOS
 
-## Create a GIF from video
+## Prevent sleep
 
 ```sh
-vid2gif () {
-fps=${2:-24}
-bn=$(basename $1)
-pf="/tmp/$bn_palette.png"
-ffmpeg -y -i $1 -vf "fps=$fps,palettegen" $pf
-ffmpeg -i $1 -i $pf -filter_complex "fps=$fps,paletteuse" -f gif - > "$1.gif"
-}
+caffeinate
 ```
 
 ## Enable key repeats
