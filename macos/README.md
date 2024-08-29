@@ -1,5 +1,9 @@
 # macOS
 
+## Keyboard-only operation
+
+<https://gist.github.com/lornajane/3892c39098cf70baa9c7a1874cddf233>
+
 ## Prevent sleep
 
 ```sh
@@ -63,3 +67,13 @@ sudo dd if=image.cdr of=/dev/rdiskX bs=1m
 
 * Open a PDF with Preview
 * Choose File->Export and toggle "Encrypt"
+
+## Setup multi-user Homebrew
+
+```sh
+sudo dscl . create /Groups/brew
+sudo dscl . /Groups/brew GroupMembership alice bob
+sudo chgrp -R brew $(brew --prefix)/*
+sudo chmod -R g+w $(brew --prefix)/*
+brew doctor
+```
