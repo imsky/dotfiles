@@ -1,32 +1,35 @@
-tap "homebrew/core"
-tap "homebrew/cask"
-
 # NTFS support
 cask "osxfuse"
-brew "ntfs-3g"
+cask "macfuse"
+tap "gromgit/homebrew-fuse"
+brew "ntfs-3g-mac"
 
 # System tools
 brew "bash-completion"
-brew "fzf"
-brew "htop"
-brew "nano"
-brew "ncdu"
 brew "ripgrep"
 brew "tmux"
 brew "tree"
 brew "w3m"
 brew "watch"
 brew "wget"
-
-# Media tools
-brew "ffmpeg"
-brew "youtube-dl"
+brew "fzf"
+brew "curl"
+# Slow builds:
+# brew "htop"
+# brew "nano"
+# brew "ncdu"
 
 # Dev tools
 brew "git"
 brew "git-extras"
 brew "git-fresh"
-brew "hyperfine"
-brew "asdf"
 brew "direnv"
 brew "dbmate"
+brew "postgresql"
+# Optional:
+# brew "hyperfine"
+
+# Media tools
+# Can't build:
+# brew "yt-dlp"
+# brew "ffmpeg"
